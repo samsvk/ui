@@ -5,7 +5,7 @@ import Title from "./components/title";
 
 function App() {
   return (
-    <div className="screen">
+    <div className="wrap">
       <Navbar />
       <Title title={"Football"} />
     </div>
