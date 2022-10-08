@@ -8,6 +8,7 @@ function App() {
     <div className="wrap">
       <Navbar />
       <Title title={"Football"} />
+      <Grid />
     </div>
   );
 }
