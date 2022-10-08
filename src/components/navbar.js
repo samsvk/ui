@@ -1,3 +1,4 @@
+import { FiArrowDown } from "react-icons/fi";
 export default function Navbar() {
   return (
     <nav className="flex flex-center_all flex-between">

@@ -118,8 +118,8 @@ body {
 
 .grid {
   display: grid;
-  &-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  &-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 .col {
@@ -150,4 +150,18 @@ body {
   z-index: -1;
   bottom: 0;
   margin: auto;
+}
+
+.screen {
+  width: 100%;
+  max-width: 100%;
+  &-sm {
+    max-width: 440px;
+  }
+  &-md {
+    max-width: 660px;
+  }
+  &-lg {
+    max-width: 1100px;
+  }
 }
