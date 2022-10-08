@@ -1,8 +1,16 @@
+import { MdArrowDownward } from "react-icons/md";
 export default function Grid() {
   return (
     <>
       <div className="flex">
-        <div className="screen text">Scroll to discover</div>
+        <div className="screen text">
+          <ul className="flex">
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>YouTube</li>
+            <li>TikTok</li>
+          </ul>
+        </div>
         <div className="screen screen-sm">
           <h3 className="text">Our commitment</h3>
           <p className="text_paragraph" style={{ marginTop: "0.25rem" }}>
