@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./static/global.scss";
 import Navbar from "./components/navbar";
 import Title from "./components/title";
-
+import Grid from "./components/grid";
 function App() {
   return (
     <div className="wrap">

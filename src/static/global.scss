@@ -14,6 +14,10 @@ body {
   color: $text;
 }
 /*bespoke styling*/
+.stat {
+  max-width: 150px;
+  gap: 0.25rem;
+}
 .logo {
   border: 2px solid $text;
   border-radius: 50rem;
@@ -22,6 +26,15 @@ body {
   min-width: 46px;
 }
 .text {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
   z-index: 10;
   font-size: 14px;
   letter-spacing: 0.3px;
@@ -30,7 +43,6 @@ body {
   color: $text;
   max-width: max-content;
   &_title {
-    // background: pink;
     max-width: max-content;
     background: $bg;
     line-height: 172px;
@@ -39,6 +51,20 @@ body {
     font-weight: 700;
     color: $paragraph;
     padding-right: 2rem;
+  }
+  &_sub {
+    max-width: max-content;
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    color: $text;
+    font-weight: 600;
+  }
+  &_paragraph {
+    max-width: max-content;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    color: $paragraph;
+    font-weight: 300;
   }
 }
 .btn {
@@ -90,11 +116,23 @@ body {
   }
 }
 
+.grid {
+  display: grid;
+  &-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.col {
+  &-span-3 {
+    grid-column: span 3 / span 3;
+  }
+}
+
 .wrap {
   max-width: 1750px;
   width: 100%;
   margin: 2rem auto;
-  gap: 5rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
